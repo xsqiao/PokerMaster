@@ -28,12 +28,19 @@ h)	（被动）收牌：当对手使用顺子、飞机或送牌时，玩家将�
 
 # 作品展示
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/2636934/1661432646291-21ec2502-2adc-47df-8af2-d85c34185f00.png#clientId=u3b889613-a486-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=765&id=ueab5c08a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=765&originWidth=529&originalType=binary&ratio=1&rotation=0&showTitle=false&size=855379&status=done&style=none&taskId=ue7ad0065-bc66-4a94-8cdf-44cb37b8464&title=&width=529)
-图2.1 游戏欢迎界面 
+
+图2.1 游戏欢迎界面
+
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/2636934/1661432659121-d6a68f2e-376c-48d6-bedc-eb3d34cc56f9.png#clientId=u3b889613-a486-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=762&id=u9d3c4186&margin=%5Bobject%20Object%5D&name=image.png&originHeight=762&originWidth=551&originalType=binary&ratio=1&rotation=0&showTitle=false&size=847990&status=done&style=none&taskId=u350cfc65-dcd1-48b2-82a4-0a705711f0f&title=&width=551)
+
 图2.2 游戏进行界面，此时下方玩家拥有发牌权
+
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/2636934/1661432669166-3871cda0-b0b6-413b-8dba-2feed0cf7118.png#clientId=u3b889613-a486-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=722&id=u61f87fd2&margin=%5Bobject%20Object%5D&name=image.png&originHeight=722&originWidth=533&originalType=binary&ratio=1&rotation=0&showTitle=false&size=800168&status=done&style=none&taskId=u823d631a-bab4-437f-9897-e415b5edfd1&title=&width=533)
-图2.3 游戏结束界面，下方玩家获胜
+
+图2.3 游戏结束界面，下方玩家获
+
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/2636934/1661432682618-470dd498-d1db-4e3f-9a78-0e12849431bf.png#clientId=u3b889613-a486-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=713&id=udde4cb7f&margin=%5Bobject%20Object%5D&name=image.png&originHeight=713&originWidth=502&originalType=binary&ratio=1&rotation=0&showTitle=false&size=692990&status=done&style=none&taskId=u74777e7f-0d81-477c-a84b-30304d678f5&title=&width=502)
+
 图2.4 振动洗牌后的闪烁显示状态
 # 设计思路
 项目设计主要分为两个大板块：含随机发牌、振动洗牌、“送牌”、“取牌”、“改牌”相应代码实现的单机布局以及基于485双机通信原理的1V1布局。项目设计核心主要包括：使用怎样的数据结构存储手中的牌、如何使用高效算法实现检测并使用特殊牌的功能、如何实现数码管与LED某一特定位的闪烁从而标识当前选中的牌面与页码、1V1如何进行初始化以确定初始发牌权、游戏过程中如何保证发牌权互斥并实时提醒玩家发牌权的有无。
