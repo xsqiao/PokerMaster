@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"PokerMaster.obj" 
+TO "PokerMaster" 
+RAMSIZE(256) 
